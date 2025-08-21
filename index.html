@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permissio - Global Environmental Data Verification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigasi -->
+    <header class="sticky top-0 z-50 w-full border-b border-slate-800 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="32" 
+                    height="32" 
+                    viewBox="0 0 300 300" 
+                    preserveAspectRatio="xMidYMid meet"
+                    class="text-emerald-400"
+                    >
+                        <g 
+                            transform="translate(0,300) scale(0.1,-0.1)" 
+                            fill="currentColor" 
+                            stroke="none"
+                        >
+                        <path d="M1220 2734 c-283 -53 -496 -161 -680 -344 -327 -327 -443 -803 -300
+                        -1241 59 -179 149 -327 288 -471 474 -490 1249 -494 1732 -9 262 264 391 626
+                        351 985 -13 110 -17 122 -35 104 -7 -7 -59 -51 -114 -98 l-102 -85 0 -90 c-1
+                        -375 -275 -744 -644 -870 -362 -123 -745 -31 -1007 242 -178 184 -269 410
+                        -269 664 0 267 93 493 280 679 140 141 274 215 475 266 51 13 108 18 210 18
+                        148 -1 207 -11 337 -60 l67 -26 102 88 c95 82 100 88 83 102 -33 24 -157 78
+                        -229 99 -38 11 -88 26 -110 33 -40 12 -385 23 -435 14z"/>
+                        <path d="M2695 2527 c-187 -75 -430 -230 -655 -416 -186 -153 -454 -450 -594
+                        -659 -23 -33 -32 -40 -42 -31 -8 6 -14 17 -14 23 0 23 -82 171 -131 238 -97
+                        130 -155 165 -262 155 -119 -11 -265 -108 -280 -187 -11 -54 9 -81 109 -155
+                        140 -102 251 -240 310 -383 15 -37 35 -86 45 -109 24 -59 59 -78 139 -78 138
+                        0 240 62 334 204 52 80 210 347 233 397 9 19 20 34 25 34 4 0 8 6 8 13 0 19
+                        205 328 280 422 137 171 436 451 565 529 48 29 55 36 35 36 -14 -1 -61 -15
+                        -105 -33z"/>
+                        </g>
+                </svg>
+                <h1 class="text-xl font-bold text-white">Permissio</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-slate-300 hover:text-emerald-400 transition-colors">Features</a>
+                <a href="#pricing" class="text-slate-300 hover:text-emerald-400 transition-colors">Pricing</a>
+                <a href="#docs" class="text-slate-300 hover:text-emerald-400 transition-colors">Documentation</a>
+                <a href="mailto:husnikusuma00@gmail.com" class="text-slate-300 hover:text-emerald-400 transition-colors">Contact</a>
+            </nav>
+            <a href="#" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2 rounded-lg transition-colors">Get API Key</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center hero-gradient">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                    Transform Fragmented Environmental Data.
+                    <br class="hidden md:block">
+                    <span class="text-emerald-400">Into Verified Insights.</span>
+                </h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-400">
+                    Unified access to standardized global environmental datasets for ESG businesses, analysts, and investors. Stop time-consuming manual data collection and start making strategic data-driven decisions with confidence.
+                </p>
+                <div class="mt-10 flex justify-center items-center space-x-4">
+                    <a href="#docs" class="bg-white text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-slate-200 transition-colors text-lg">
+                        View Documentation
+                    </a>
+                    <a href="https://github.com/hk-dev13/project-permit-api" target="_blank" class="border border-slate-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors text-lg">
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 sm:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto scroll-reveal">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">The Most Comprehensive Environmental Data Platform</h3>
+                    <p class="mt-4 text-lg text-slate-400">
+                        From carbon emissions to ISO certifications, we do the heavy lifting by aggregating and cleansing data from various trusted sources, presenting it through one simple, easy-to-use API.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card p-8 rounded-xl scroll-reveal">
+                        <div class="bg-slate-800 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M4.22 12.22a3 3 0 0 0 0 4.24l8.49 8.49a3 3 0 0 0 4.24 0l8.49-8.49a3 3 0 0 0 0-4.24l-8.49-8.49a3 3 0 0 0-4.24 0Z"/><path d="M16 12h-4"/></svg>
+                        </div>
+                        <h4 class="mt-6 text-xl font-bold text-white">Multi-Source Integration</h4>
+                        <p class="mt-2 text-slate-400">Access data from the EPA, EEA, ISO, and other government data sources through a single unified integration point, saving hundreds of hours of engineering work.</p>
+                    </div>
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card p-8 rounded-xl scroll-reveal" style="transition-delay: 100ms;">
+                        <div class="bg-slate-800 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                        </div>
+                        <h4 class="mt-6 text-xl font-bold text-white">Data Standardization</h4>
+                        <p class="mt-2 text-slate-400">We normalize diverse data formats, units, and schemas into one consistent, predictable JSON structure, so you can start analyzing immediately.</p>
+                    </div>
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card p-8 rounded-xl scroll-reveal" style="transition-delay: 200ms;">
+                        <div class="bg-slate-800 w-12 h-12 rounded-lg flex items-center justify-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3-3 3 3"/></svg>
+                        </div>
+                        <h4 class="mt-6 text-xl font-bold text-white">CEVS Score</h4>
+                        <p class="mt-2 text-slate-400">Get a holistic, actionable environmental performance score (CEVS) for ESG analysis, risk assessment, and supply chain verification.</p>
+                    </div>
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card p-8 rounded-xl scroll-reveal" style="transition-delay: 300ms;">
+                        <div class="bg-slate-800 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h4 class="mt-6 text-xl font-bold text-white">Developer-Friendly</h4>
+                        <p class="mt-2 text-slate-400">Interactive OpenAPI documentation, SDKs, and clear error handling designed to accelerate the integration process from weeks to hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Example Section -->
+        <section id="docs" class="py-20 sm:py-32 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="scroll-reveal">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white">Start in Minutes</h3>
+                        <p class="mt-4 text-lg text-slate-400">
+                            Our API is designed for simplicity and power. Get complex global emissions data with a single, simple API call. See our full documentation to explore all available possibilities and data sources.
+                        </p>
+                        <div class="mt-8 space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                                <p class="text-slate-300">Predictable and easily parseable JSON responses, accelerating your application development.</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                               <div class="w-6 h-6 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0"><svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                                <p class="text-slate-300">Internal Caching and Pagination support to ensure optimal performance and fast response times.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-reveal" style="transition-delay: 150ms;">
+                        <div class="bg-[#0D1117] rounded-xl border border-slate-800 overflow-hidden">
+                            <div class="px-4 py-2 border-b border-slate-800 flex justify-between items-center">
+                                <span class="text-sm text-slate-400">Example: Get emissions data</span>
+                                <button id="copyBtn" class="text-sm text-slate-400 hover:text-white transition-colors flex items-center space-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    <span id="copyBtnText">Copy</span>
+                                </button>
+                            </div>
+                            <pre class="p-6 text-sm overflow-x-auto" id="codeBlock"><code class="language-bash"><span class="text-pink-400">curl</span> <span class="text-sky-300">-X</span> GET \
+  <span class="text-sky-300">-H</span> <span class="text-emerald-300">"Authorization: Bearer &lt;YOUR_API_KEY&gt;"</span> \
+  <span class="text-slate-100">"https://api.veridata.dev/global/emissions?country=USA"</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 sm:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto scroll-reveal">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Flexible and Transparent Pricing</h3>
+                    <p class="mt-4 text-lg text-slate-400">
+                        Start for free for non-commercial and research projects, then upgrade as your needs grow. We support all scales, from hobby projects to large enterprise applications.
+                    </p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Pricing Card 1: Basic -->
+                    <div class="feature-card p-8 rounded-xl flex flex-col scroll-reveal">
+                        <h4 class="text-lg font-semibold text-emerald-400">Basic</h4>
+                        <p class="mt-2 text-4xl font-bold text-white">Free</p>
+                        <p class="text-slate-400">Perfect for research, evaluation, & non-commercial projects.</p>
+                        <ul class="mt-8 space-y-4 text-slate-300 flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>100 requests/day</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Access to core emissions & country data</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Support via the GitHub community</li>
+                        </ul>
+                        <a href="#" class="mt-8 w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 rounded-lg transition-colors">Start Free</a>
+                    </div>
+                    <!-- Pricing Card 2: Premium (Highlighted) -->
+                    <div class="relative feature-card p-8 rounded-xl flex flex-col border-2 border-emerald-500 scroll-reveal" style="transition-delay: 150ms;">
+                         <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 px-4 py-1 bg-emerald-500 text-white text-sm font-semibold rounded-full">Most Popular</div>
+                        <h4 class="text-lg font-semibold text-emerald-400">Premium</h4>
+                        <p class="mt-2 text-4xl font-bold text-white">$99<span class="text-lg font-medium text-slate-400">/month</span></p>
+                        <p class="text-slate-400">Designed for growing startups and small businesses.</p>
+                        <ul class="mt-8 space-y-4 text-slate-300 flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1000 requests/day</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>All features from the Basic plan</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Access to analytics & CEVS scores</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Priority support via email</li>
+                        </ul>
+                        <a href="#" class="mt-8 w-full text-center bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 rounded-lg transition-colors">Choose Premium</a>
+                    </div>
+                    <!-- Pricing Card 3: Enterprise -->
+                    <div class="feature-card p-8 rounded-xl flex flex-col scroll-reveal" style="transition-delay: 300ms;">
+                        <h4 class="text-lg font-semibold text-emerald-400">Enterprise</h4>
+                        <p class="mt-2 text-4xl font-bold text-white">Custom</p>
+                        <p class="text-slate-400">Custom solutions for large-scale enterprises with unique needs.</p>
+                        <ul class="mt-8 space-y-4 text-slate-300 flex-grow">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Custom usage and throughput limits</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>All features from the Premium plan</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>SLA support & dedicated account manager</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Full access to historical data & beta features</li>
+                        </ul>
+                        <a href="mailto:husnikusuma00@gmail.com" class="mt-8 w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 rounded-lg transition-colors">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-bold text-white">Permissio</h3>
+                    <p class="mt-1 text-slate-400">Empowering sustainable decisions with data.</p>
+                </div>
+                <div class="flex mt-8 md:mt-0 space-x-6">
+                    <a href="https://github.com/hk-dev13/project-permit-api" target="_blank" class="text-slate-400 hover:text-white transition-colors">GitHub</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">Documentation</a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">License</a>
+                    <a href="mailto:husnikusuma00@gmail.com" class="text-slate-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+                &copy; 2025 Husni Kusuma (hk-dev13). All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
