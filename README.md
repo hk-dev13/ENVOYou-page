@@ -39,7 +39,7 @@ Optimized for Performance: Minimal dependencies and a clean structure ensure fas
 ## Getting Started
 No complex setup is required. Since this is a static website, you can run it locally directly from your file system.
 
-### Clone the repository:
+## Clone the repository:
 
 git clone https://github.com/hk-dev13/permissio-landing-page.git
 cd permissio-landing-page
@@ -70,3 +70,16 @@ Netlify: Drag and drop the project folder into the Netlify dashboard for instant
 Vercel: Connect your GitHub repository to Vercel for automatic deployments on every push.
 
 AWS S3: You can also host the project files in an AWS S3 bucket configured for static website hosting.
+
+---
+### License
+This project is under the MIT License. See the LICENSE file for more details.
+
+---
+### Contact
+If you have any questions or would like to collaborate, please contact me at:
+
+* **Email:** [husnikusuma00@gmail.com](mailto:husnikusuma00@gmail.com)
+
+---
+&copy; 2025 Husni Kusuma. All Rights Reserved.
