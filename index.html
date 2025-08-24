@@ -16,7 +16,15 @@
     <link rel="manifest" href="assets/favicon_io_envoyou/site.webmanifest">
 </head>
 <body>
-
+    <div id="contributor-banner" class="hidden fixed top-0 left-0 right-0 z-[60] bg-emerald-500 text-white p-4 text-center shadow-lg transition-transform duration-500 -translate-y-full">
+        <div class="container mx-auto relative">
+            <p>
+                <strong>Kami sedang membangun tim!</strong> Apakah Anda seorang developer, desainer, atau pemerhati lingkungan? 
+                <a href="https://github.com/hk-dev13/ENVOYou-page/issues" target="_blank" class="font-bold underline hover:text-emerald-200">Bantu kami membangun masa depan data lingkungan.</a>
+            </p>
+            <button id="close-banner-btn" class="absolute -top-2 -right-2 md:right-0 text-3xl font-light leading-none">&times;</button>
+        </div>
+    </div>
     <!-- Header / Navigasi -->
     <header class="sticky top-0 z-50 w-full border-b border-slate-800 glass-nav">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -230,6 +238,7 @@ fill="currentcolor" stroke="none">
                     <a href="https://github.com/hk-dev13/project-permit-api" target="_blank" class="text-slate-400 hover:text-white transition-colors">GitHub</a>
                     <a href="coming-soon.html" class="text-slate-400 hover:text-white transition-colors">Documentation</a>
                     <a href="coming-soon.html" class="text-slate-400 hover:text-white transition-colors">License</a>
+                    <a href="#" id="contribute-link" class="text-slate-400 hover:text-white transition-colors">Contribute</a>
                     <a href="mailto:info@envoyou.com" class="text-slate-400 hover:text-white transition-colors">Contact</a>
                 </div>
             </div>
