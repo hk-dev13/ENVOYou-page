@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - ENVOYou API</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io_envoyou/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io_envoyou/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io_envoyou/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io_envoyou/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io_envoyou/site.webmanifest">
+</head>
+<body class="bg-slate-950">
+
+    <!-- Header / Navigation (Same as in index.html) -->
+    <header class="sticky top-0 z-50 w-full border-b border-slate-800 glass-nav">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-1">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="25" height="25" viewBox="0 0 300 300" class="text-emerald-400"
+ preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0,300) scale(0.1,-0.1)"
+fill="currentcolor" stroke="none">
+<path d="M1130 2950 c-116 -24 -199 -54 -301 -106 -275 -142 -540 -405 -671
+-668 l-30 -61 58 60 c160 164 359 268 619 321 76 16 135 19 375 19 244 -1 305
+-4 425 -23 149 -23 213 -37 222 -46 3 -3 -97 -3 -223 1 -626 16 -1012 -96
+-1269 -368 -86 -93 -135 -161 -190 -268 -28 -54 -36 -78 -29 -89 15 -23 216
+-121 326 -158 189 -64 337 -77 493 -45 157 32 288 94 470 219 397 275 509 326
+720 325 168 -1 311 -48 510 -168 44 -26 83 -49 86 -51 9 -5 -24 100 -56 179
+-102 257 -298 507 -521 666 -92 66 -292 170 -379 197 -179 56 -343 85 -473 83
+-42 0 -115 -9 -162 -19z"/>
+<path d="M2115 2835 c383 -259 598 -551 681 -920 8 -38 18 -140 21 -225 22
+-608 -246 -1030 -743 -1175 -288 -84 -715 -70 -1084 35 -108 31 -94 32 85 3
+149 -24 536 -23 670 1 313 57 542 170 718 356 71 74 157 186 157 204 0 10
+-216 149 -293 187 -185 94 -381 133 -554 111 -166 -21 -263 -60 -623 -249
+-215 -113 -311 -144 -465 -151 -103 -4 -132 -1 -200 17 -136 38 -274 114 -419
+233 -32 27 -60 47 -62 45 -7 -7 39 -207 67 -292 17 -49 57 -142 90 -205 378
+-732 1274 -1018 2011 -643 483 246 792 723 815 1258 15 362 -85 690 -300 981
+-71 95 -217 237 -323 313 -76 54 -312 181 -336 181 -5 0 34 -29 87 -65z"/>
+</g>
+</svg>
+                <h1 class="text-xl font-bold text-white">ENVOYou</h1>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="/#features" class="text-slate-300 hover:text-emerald-400 transition-colors">Features</a>
+                <a href="/#pricing" class="text-slate-300 hover:text-emerald-400 transition-colors">Pricing</a>
+                <a href="documentation.html" class="text-emerald-400 font-semibold">Documentation</a>
+                <a href="mailto:husnikusuma00@gmail.com" class="text-slate-300 hover:text-emerald-400 transition-colors">Contact</a>
+            </nav>
+            <a href="coming-soon.html" class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-5 py-2 rounded-lg transition-colors">Get API Key</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 text-slate-300">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-extrabold text-white">API Documentation</h1>
+            <p class="mt-4 text-lg text-slate-400">Welcome to the ENVOYou API documentation. Here you will find everything you need to integrate with our service.</p>
+
+            <!-- Getting Started Section -->
+            <section id="getting-started" class="mt-12">
+                <h2 class="text-2xl font-bold text-white border-b border-slate-800 pb-2">Getting Started</h2>
+                <p class="mt-4">To start using the ENVOYou API, you will need an API Key. You can get one for free by signing up on the <a href="coming-soon.html" class="text-emerald-400 underline">Get API Key</a> page.</p>
+            </section>
+
+            <!-- Authentication Section -->
+            <section id="authentication" class="mt-12">
+                <h2 class="text-2xl font-bold text-white border-b border-slate-800 pb-2">Authentication</h2>
+                <p class="mt-4">All requests to the API must be authenticated. Include your API Key in the `Authorization` header with the `Bearer` scheme.</p>
+                <div class="mt-4 bg-slate-900 rounded-xl border border-slate-800">
+                    <pre class="p-6 text-sm overflow-x-auto"><code class="language-bash"><span class="text-sky-300">Authorization:</span> <span class="text-slate-100">Bearer &lt;YOUR_API_KEY&gt;</span></code></pre>
+                </div>
+            </section>
+
+            <!-- Endpoints Section -->
+            <section id="endpoints" class="mt-12">
+                <h2 class="text-2xl font-bold text-white border-b border-slate-800 pb-2">Endpoints</h2>
+                
+                <!-- Endpoint 1: Global Emissions -->
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-white">Get Global Emissions</h3>
+                    <p class="mt-2">Fetches verified emissions data for a specific country.</p>
+                    <div class="mt-2 flex items-center space-x-2">
+                        <span class="px-3 py-1 bg-emerald-700 text-emerald-100 text-sm font-bold rounded">GET</span>
+                        <code class="text-slate-400">/global/emissions</code>
+                    </div>
+
+                    <h4 class="mt-4 font-semibold text-white">Query Parameters:</h4>
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li>`country` (string, required) - The ISO 3166-1 alpha-3 country code (e.g., `USA`, `IDN`).</li>
+                    </ul>
+
+                    <h4 class="mt-4 font-semibold text-white">Example Request:</h4>
+                    <div class="mt-2 bg-slate-900 rounded-xl border border-slate-800">
+                        <pre class="p-6 text-sm overflow-x-auto"><code class="language-bash"><span class="text-pink-400">curl</span> <span class="text-sky-300">-X</span> GET \
+  <span class="text-sky-300">-H</span> <span class="text-emerald-300">"Authorization: Bearer &lt;YOUR_API_KEY&gt;"</span> \
+  <span class="text-slate-100">"https://api.veridata.dev/global/emissions?country=USA"</span></code></pre>
+                    </div>
+
+                    <h4 class="mt-4 font-semibold text-white">Example Success Response (200 OK):</h4>
+                     <div class="mt-2 bg-slate-900 rounded-xl border border-slate-800">
+                        <pre class="p-6 text-sm overflow-x-auto"><code class="language-json">{
+  <span class="text-sky-300">"country"</span>: <span class="text-emerald-300">"USA"</span>,
+  <span class="text-sky-300">"year"</span>: <span class="text-purple-400">2024</span>,
+  <span class="text-sky-300">"co2_emissions_tons"</span>: <span class="text-purple-400">4870000000</span>,
+  <span class="text-sky-300">"cevs_score"</span>: <span class="text-purple-400">75.4</span>,
+  <span class="text-sky-300">"source"</span>: <span class="text-emerald-300">"EPA"</span>,
+  <span class="text-sky-300">"last_updated"</span>: <span class="text-emerald-300">"2025-08-24T12:00:00Z"</span>
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (Same as in index.html) -->
+    <footer class="border-t border-slate-800 mt-16">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left">
+                    <h3 class="text-lg font-bold text-white">ENVOYou</h3>
+                    <p class="mt-1 text-slate-400">Empowering sustainable decisions with data.</p>
+                </div>
+                <div class="flex mt-8 md:mt-0 space-x-6">
+                    <a href="https://github.com/hk-dev13/project-permit-api" target="_blank" class="text-slate-400 hover:text-white transition-colors">GitHub</a>
+                    <a href="documentation.html" class="text-slate-400 hover:text-white transition-colors">Documentation</a>
+                    <a href="coming-soon.html" class="text-slate-400 hover:text-white transition-colors">License</a>
+                    <a href="mailto:husnikusuma00@gmail.com" class="text-slate-400 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+                &copy; 2025 Husni Kusuma (hk-dev13). All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
