@@ -4,28 +4,20 @@
         const codeBlock = document.getElementById('codeBlock');
 
         copyBtn.addEventListener('click', () => {
-            const codeToCopy = codeBlock.innerText;
-            
-            // Menggunakan document.execCommand sebagai fallback
-            const textArea = document.createElement('textarea');
-            textArea.value = codeToCopy;
-            document.body.appendChild(textArea);
-            textArea.select();
-            try {
-                document.execCommand('copy');
-                copyBtnText.textContent = 'Disalin!';
-                copyBtn.classList.add('text-emerald-400');
-            } catch (err) {
-                console.error('Gagal menyalin teks: ', err);
-                copyBtnText.textContent = 'Gagal';
-            }
-            document.body.removeChild(textArea);
+    const codeToCopy = codeBlock.innerText;
 
-            setTimeout(() => {
-                copyBtnText.textContent = 'Salin';
-                copyBtn.classList.remove('text-emerald-400');
-            }, 2000);
-        });
+    navigator.clipboard.writeText(codeToCopy).then(() => {
+        copyBtnText.textContent = 'Disalin!';
+        copyBtn.classList.add('text-emerald-400');
+        setTimeout(() => {
+            copyBtnText.textContent = 'Salin';
+            copyBtn.classList.remove('text-emerald-400');
+        }, 2000);
+    }).catch(err => {
+        console.error('Gagal menyalin teks: ', err);
+        copyBtnText.textContent = 'Gagal';
+    });
+});
 
         // Fungsi untuk animasi saat scroll
         const scrollElements = document.querySelectorAll('.scroll-reveal');
