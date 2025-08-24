@@ -1,0 +1,25 @@
+{
+  "name": "envoyou-page",
+  "version": "1.0.0",
+  "description": "This repository contains the source code for the official landing page of the ENVOYou API, a global environmental data verification service. This is a static, single-page website designed to be fast, responsive, and visually appealing.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hk-dev13/ENVOYou-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hk-dev13/ENVOYou-page/issues"
+  },
+  "homepage": "https://github.com/hk-dev13/ENVOYou-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
