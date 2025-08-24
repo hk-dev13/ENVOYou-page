@@ -1,8 +1,8 @@
-# Permissio API - Landing Page
-This repository contains the source code for the official landing page of the Permissio API, a global environmental data verification service. This is a static, single-page website designed to be fast, responsive, and visually appealing.
+# ENVOYou API - Landing Page
+This repository contains the source code for the official landing page of the ENVOYou API, a global environmental data verification service. This is a static, single-page website designed to be fast, responsive, and visually appealing.
 
 ## Project Overview
-The primary goal of this landing page is to serve as the public-facing "storefront" for the Permissio API. It is designed to:
+The primary goal of this landing page is to serve as the public-facing "storefront" for the ENVOYou API. It is designed to:
 
 Introduce the API: Clearly explain the problem it solves—transforming fragmented environmental data into actionable insights.
 
@@ -41,8 +41,8 @@ No complex setup is required. Since this is a static website, you can run it loc
 
 ## Clone the repository:
 
-git clone https://github.com/hk-dev13/permissio-landing-page.git
-cd permissio-landing-page
+git clone https://github.com/hk-dev13/ENVOYou-page.git
+cd ENVOYou-landing-page
 
 Open in Browser:
 Simply open the index.html file in your favorite web browser (e.g., Chrome, Firefox, Safari).
@@ -79,7 +79,7 @@ This project is under the MIT License. See the LICENSE file for more details.
 ### Contact
 If you have any questions or would like to collaborate, please contact me at:
 
-* **Email:** [husnikusuma00@gmail.com](mailto:husnikusuma00@gmail.com)
+* **Email:** [info@envoyou.com](mailto:info00@envoyou.com)
 
 ---
-&copy; 2025 Husni Kusuma. All Rights Reserved.
+&copy; 2025 Husni_Kusuma. All Rights Reserved.
