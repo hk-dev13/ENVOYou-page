@@ -82,4 +82,4 @@ If you have any questions or would like to collaborate, please contact me at:
 * **Email:** [info@envoyou.com](mailto:info@envoyou.com)
 
 ---
-&copy; 2025 Husni_Kusuma. All Rights Reserved.
+&copy; 2025 Husni_Kusuma (hk-dev13). All Rights Reserved.
