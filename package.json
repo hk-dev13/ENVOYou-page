@@ -1,11 +1,15 @@
 {
   "name": "envoyou-page",
   "version": "1.0.0",
-  "description": "This repository contains the source code for the official landing page of the ENVOYou API, a global environmental data verification service. This is a static, single-page website designed to be fast, responsive, and visually appealing.",
+  "description": "This repository contains the source code for the official landing page of the ENVOY API...",
   "main": "script.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch",
+    "clean": "rimraf dist",
+    "build:css": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
+    "copy:html": "copyfiles -u 2 \"src/pages/**/*.html\" dist",
+    "copy:assets": "copyfiles -u 2 \"src/assets/**/*\" dist",
+    "build": "npm run clean && npm run build:css && npm run copy:html && npm run copy:assets",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,13 +17,15 @@
     "url": "git+https://github.com/hk-dev13/ENVOYou-page.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Husni Kusuma (hk-dev13)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hk-dev13/ENVOYou-page/issues"
   },
   "homepage": "https://github.com/hk-dev13/ENVOYou-page#readme",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.4.10"
   }
 }
