@@ -5,7 +5,7 @@
   "main": "script.js",
     "scripts": {
     "clean": "rimraf dist",
-    "copy:assets": "copyfiles -u 1 \"src/assets/**/*\" dist/assets",
+    "copy:assets": "copyfiles -u 1 \"src/assets/**/*\" dist",
     "copy:html": "copyfiles -u 2 \"src/pages/*.html\" dist",
     "copy:js": "copyfiles -u 2 \"src/js/*.js\" dist/js",
     "build:css": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
