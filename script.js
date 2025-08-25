@@ -51,7 +51,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('contributor-banner');
     const closeBtn = document.getElementById('close-banner-btn');
-    const contributeLink = document.getElementById('contribute-link');
+    const contributeLink = document.getElementById('contribute-link-footer');
 
     // Fungsi untuk menampilkan banner
     const showBanner = () => {
