@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "This repository contains the source code for the official landing page of the ENVOY API...",
   "main": "script.js",
-  "scripts": {
-    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch",
+    "scripts": {
     "clean": "rimraf dist",
+    "copy:assets": "copyfiles -u 1 \"src/assets/**/*\" dist/assets",
+    "copy:html": "copyfiles -u 2 \"src/pages/*.html\" dist",
+    "copy:js": "copyfiles -u 2 \"src/js/*.js\" dist/js",
     "build:css": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
-    "copy:html": "copyfiles -u 2 \"src/pages/**/*.html\" dist",
-    "copy:assets": "copyfiles -u 1 \"src/assets/**/*\" dist",
-    "build": "npm run clean && npm run build:css && npm run copy:html && npm run copy:assets",
+    "build": "npm run clean && npm run copy:html && npm run copy:assets && npm run copy:js && npm run build:css",
+    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
