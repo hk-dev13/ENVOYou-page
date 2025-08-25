@@ -19,8 +19,16 @@
     <div id="contributor-banner" class="hidden fixed top-0 left-0 right-0 z-[60] bg-emerald-500 text-white shadow-lg transition-transform duration-500 -translate-y-full">
     <div class="container mx-auto px-4 py-3 relative flex items-center justify-center">
         <p class="text-sm sm:text-base pr-10 text-left">
-            <strong>We're building a team!</strong> Are you a developer, designer, or data enthusiast? 
-            <a href="https://github.com/hk-dev13/ENVOYou-page/issues" target="_blank" class="font-bold underline hover:text-emerald-200">Help us build the future of environmental data.</a>
+            <!-- Teks untuk layar kecil (mobile) -->
+            <span class="sm:hidden">
+                <strong>We're building a team!</strong> 
+                <a href="https://github.com/hk-dev13/ENVOYou-page/issues" target="_blank" class="font-bold underline hover:text-emerald-200">Help us build the future.</a>
+            </span>
+            <!-- Teks untuk layar yang lebih besar -->
+            <span class="hidden sm:inline">
+                <strong>We're building a team!</strong> Are you a developer, designer, or data enthusiast? 
+                <a href="https://github.com/hk-dev13/ENVOYou-page/issues" target="_blank" class="font-bold underline hover:text-emerald-200">Help us build the future of environmental data.</a>
+            </span>
         </p>
         <button id="close-banner-btn" class="absolute top-1/2 -translate-y-1/2 right-3 text-3xl font-light leading-none">&times;</button>
     </div>
@@ -137,7 +145,7 @@
         <!-- Code Example Section -->
         <section id="docs" class="py-20 sm:py-32 bg-slate-900/50">
             <div class="container mx-auto px-6">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="scroll-reveal">
                         <h3 class="text-3xl md:text-4xl font-bold text-white">Start in Minutes</h3>
                         <p class="mt-4 text-lg text-slate-400">
