@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "build:css": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
     "copy:html": "copyfiles -u 2 \"src/pages/**/*.html\" dist",
-    "copy:assets": "copyfiles -u 2 \"src/assets/**/*\" dist",
+    "copy:assets": "copyfiles -u 1 \"src/assets/**/*\" dist",
     "build": "npm run clean && npm run build:css && npm run copy:html && npm run copy:assets",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
