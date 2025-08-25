@@ -6,6 +6,7 @@ body {
             font-family: 'Inter', sans-serif;
             background-color: #020617; /* slate-950 */
             color: #cbd5e1; /* slate-300 */
+            overflow-x: hidden;
         }
         .glass-nav {
             background-color: rgba(15, 23, 42, 0.8);
